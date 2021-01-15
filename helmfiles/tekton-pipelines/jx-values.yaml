@@ -31,10 +31,12 @@ jxRequirements:
     provider: minikube
   environments:
   - key: dev
+    owner: ascheman
+    repository: jx3-microk8s-demo-2021-01-15
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: 94.130.153.251.nip.io
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -tekton-pipelines.
@@ -42,6 +44,8 @@ jxRequirements:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: ascheman
   repository: bucketrepo
   secretStorage: vault
   vault: {}
