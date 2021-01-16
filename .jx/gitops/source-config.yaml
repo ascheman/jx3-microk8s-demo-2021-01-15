@@ -1,0 +1,12 @@
+apiVersion: gitops.jenkins-x.io/v1alpha1
+kind: SourceConfig
+metadata:
+  creationTimestamp: null
+spec:
+  groups:
+  - owner: ascheman
+    provider: https://github.com
+    providerKind: github
+    repositories:
+    - name: jx3-demo-golang-http-2021-01-16
+    scheduler: in-repo
