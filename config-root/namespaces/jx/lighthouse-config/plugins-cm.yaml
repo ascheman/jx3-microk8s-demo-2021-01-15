@@ -6,6 +6,10 @@ data:
       repos:
       - ascheman/jx3-microk8s-demo-2021-01-15
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - ascheman/jx3-demo-golang-http-2021-01-16
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -20,6 +24,22 @@ data:
       additional_labels: null
     owners: {}
     plugins:
+      ascheman/jx3-demo-golang-http-2021-01-16:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
       ascheman/jx3-microk8s-demo-2021-01-15:
       - config-updater
       - approve
@@ -49,6 +69,11 @@ data:
     - repos:
       - ascheman/jx3-microk8s-demo-2021-01-15
       trusted_org: todo
+    - repos:
+      - ascheman/jx3-demo-golang-http-2021-01-16
+      trusted_org: todo
+    welcome:
+    - message_template: Welcome
 kind: ConfigMap
 metadata:
   creationTimestamp: null

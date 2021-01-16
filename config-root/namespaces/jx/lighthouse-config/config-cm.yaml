@@ -7,6 +7,7 @@ data:
       LinkURL: null
     in_repo_config:
       enabled:
+        ascheman/jx3-demo-golang-http-2021-01-16: true
         ascheman/jx3-microk8s-demo-2021-01-15: true
     plank: {}
     pod_namespace: jx
@@ -19,6 +20,7 @@ data:
         required-if-present-contexts: null
         skip-unknown-contexts: false
       merge_method:
+        ascheman/jx3-demo-golang-http-2021-01-16: merge
         ascheman/jx3-microk8s-demo-2021-01-15: merge
       queries:
       - labels:
@@ -31,6 +33,7 @@ data:
         - needs-rebase
         repos:
         - ascheman/jx3-microk8s-demo-2021-01-15
+        - ascheman/jx3-demo-golang-http-2021-01-16
       - labels:
         - updatebot
         missingLabels:
@@ -41,6 +44,7 @@ data:
         - needs-rebase
         repos:
         - ascheman/jx3-microk8s-demo-2021-01-15
+        - ascheman/jx3-demo-golang-http-2021-01-16
       target_url: http://dashboard-jx.94.130.153.251.nip.io
 kind: ConfigMap
 metadata:
