@@ -30,6 +30,7 @@ spec:
       email: ""
       enabled: false
       production: false
+    serviceType: NodePort
   pipelineUser:
     username: ascheman
   repository: bucketrepo
