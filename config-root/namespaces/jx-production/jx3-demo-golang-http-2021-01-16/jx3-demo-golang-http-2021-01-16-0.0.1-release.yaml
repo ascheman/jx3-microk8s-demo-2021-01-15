@@ -1,0 +1,49 @@
+# Source: jx3-demo-golang-http-2021-01-16/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-17T18:06:13Z"
+  deletionTimestamp: null
+  name: 'jx3-demo-golang-http-2021-01-16-0.0.1'
+  namespace: jx-production
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.1
+      sha: 47ac7ddcae02345e759ab5c7e96c1517d782b872
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: c29e6d8805e5afa5854cee70606fe58ac5fc2568
+    - author:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      branch: master
+      committer:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      message: |
+        chore: Jenkins X build pack
+      sha: 9c044e8a2cbca2ade40d8a33aa64d4d5cb40ae7c
+  gitHttpUrl: https://github.com/ascheman/jx3-demo-golang-http-2021-01-16
+  gitOwner: ascheman
+  gitRepository: jx3-demo-golang-http-2021-01-16
+  name: 'jx3-demo-golang-http-2021-01-16'
+  releaseNotesURL: https://github.com/ascheman/jx3-demo-golang-http-2021-01-16/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}
