@@ -13,7 +13,7 @@ metadata:
   namespace: jx
 spec:
   rules:
-    - host: docker-registry-jx.94.130.153.251.nip.io
+    - host: docker-registry-jx.k8s0.dukecon.org
       http:
         paths:
           - path: /

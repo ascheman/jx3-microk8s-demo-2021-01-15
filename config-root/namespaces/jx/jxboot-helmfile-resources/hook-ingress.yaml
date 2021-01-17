@@ -15,4 +15,4 @@ spec:
           - backend:
               serviceName: hook
               servicePort: 80
-      host: hook-jx.94.130.153.251.nip.io
+      host: hook-jx.k8s0.dukecon.org

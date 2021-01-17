@@ -37,7 +37,7 @@ jxRequirements:
   - key: staging
   - key: production
   ingress:
-    domain: 94.130.153.251.nip.io
+    domain: k8s0.dukecon.org
     externalDNS: false
     kind: ingress
     namespaceSubDomain: -secret-infra.

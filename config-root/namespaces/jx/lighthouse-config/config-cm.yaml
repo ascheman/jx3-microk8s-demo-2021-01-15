@@ -45,7 +45,7 @@ data:
         repos:
         - ascheman/jx3-microk8s-demo-2021-01-15
         - ascheman/jx3-demo-golang-http-2021-01-16
-      target_url: http://dashboard-jx.94.130.153.251.nip.io
+      target_url: http://dashboard-jx.k8s0.dukecon.org
 kind: ConfigMap
 metadata:
   creationTimestamp: null
