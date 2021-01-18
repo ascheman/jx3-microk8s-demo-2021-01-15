@@ -24,7 +24,7 @@ spec:
       serviceAccountName: jx3-demo-golang-http-2021-01-16-jx3-demo-golang-http-2021-01-16
       containers:
         - name: jx3-demo-golang-http-2021-01-16
-          image: "10.152.183.96/ascheman/jx3-demo-golang-http-2021-01-16:0.0.1"
+          image: "docker-registry-jx.k8s0.dukecon.org/ascheman/jx3-demo-golang-http-2021-01-16:0.0.1"
           imagePullPolicy: IfNotPresent
           env:
             - name: VERSION
