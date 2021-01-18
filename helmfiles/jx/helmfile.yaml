@@ -58,6 +58,7 @@ releases:
   name: jx-build-controller
   values:
   - ../../versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
+  - jxboot-helmfile-resources-values.yaml
   - jx-values.yaml
 templates: {}
 renderedvalues: {}
