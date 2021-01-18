@@ -18,6 +18,7 @@ releases:
   values:
   - ../../charts/jenkins-x/jxboot-helmfile-resources/values.yaml
   - ../../versionStream/charts/jenkins-x/jxboot-helmfile-resources/values.yaml.gotmpl
+  - jxboot-helmfile-resources-values.yaml
   - jx-values.yaml
 - chart: jx3/jenkins-x-crds
   version: 3.0.5
@@ -58,7 +59,6 @@ releases:
   name: jx-build-controller
   values:
   - ../../versionStream/charts/jx3/jx-build-controller/values.yaml.gotmpl
-  - jxboot-helmfile-resources-values.yaml
   - jx-values.yaml
 templates: {}
 renderedvalues: {}
