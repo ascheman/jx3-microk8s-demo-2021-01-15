@@ -7,5 +7,11 @@ namespace: jx-staging
 repositories:
 - name: dev
   url: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+- name: dev2
+  url: https://github.com/ascheman/helmcharts.git
+releases:
+- chart: dev2/jx3-demo-golang-http-2021-01-16
+  version: 0.0.4
+  name: jx3-demo-golang-http-2021-01-16
 templates: {}
 renderedvalues: {}
