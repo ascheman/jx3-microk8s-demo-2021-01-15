@@ -8,6 +8,7 @@ data:
     in_repo_config:
       enabled:
         ascheman/jx3-demo-golang-http-2021-01-16: true
+        ascheman/jx3-demo-spring-boot-2021-01-18: true
         ascheman/jx3-microk8s-demo-2021-01-15: true
     plank: {}
     pod_namespace: jx
@@ -21,6 +22,7 @@ data:
         skip-unknown-contexts: false
       merge_method:
         ascheman/jx3-demo-golang-http-2021-01-16: merge
+        ascheman/jx3-demo-spring-boot-2021-01-18: merge
         ascheman/jx3-microk8s-demo-2021-01-15: merge
       queries:
       - labels:
@@ -34,6 +36,7 @@ data:
         repos:
         - ascheman/jx3-microk8s-demo-2021-01-15
         - ascheman/jx3-demo-golang-http-2021-01-16
+        - ascheman/jx3-demo-spring-boot-2021-01-18
       - labels:
         - updatebot
         missingLabels:
@@ -45,6 +48,7 @@ data:
         repos:
         - ascheman/jx3-microk8s-demo-2021-01-15
         - ascheman/jx3-demo-golang-http-2021-01-16
+        - ascheman/jx3-demo-spring-boot-2021-01-18
       target_url: http://dashboard-jx.k8s0.dukecon.org
 kind: ConfigMap
 metadata:
