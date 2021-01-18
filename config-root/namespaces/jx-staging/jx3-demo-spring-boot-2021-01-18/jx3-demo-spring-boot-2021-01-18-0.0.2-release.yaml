@@ -1,0 +1,59 @@
+# Source: jx3-demo-spring-boot-2021-01-18/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2021-01-18T16:19:53Z"
+  deletionTimestamp: null
+  name: 'jx3-demo-spring-boot-2021-01-18-0.0.2'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: release 0.0.2
+      sha: aab45b889e798ec76948e2b9be7128f222a70b15
+    - author:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      branch: master
+      committer:
+        email: jenkins-x@googlegroups.com
+        name: jenkins-x-bot
+      message: |
+        chore: add variables
+      sha: 3b282c9f1a8965d6cb5d1c4f146160613cb23237
+    - author:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      branch: master
+      committer:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      message: |
+        fix(plugins): use a better version of maven plugins
+      sha: 9a0392c86f2eff51067556bb53d68ca5fbda6ba2
+    - author:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      branch: master
+      committer:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      message: |
+        chore: Jenkins X build pack
+      sha: b4e5b48b535f205d4641f4f55edf9af85b1af653
+  gitHttpUrl: https://github.com/ascheman/jx3-demo-spring-boot-2021-01-18
+  gitOwner: ascheman
+  gitRepository: jx3-demo-spring-boot-2021-01-18
+  name: 'jx3-demo-spring-boot-2021-01-18'
+  releaseNotesURL: https://github.com/ascheman/jx3-demo-spring-boot-2021-01-18/releases/tag/v0.0.2
+  version: v0.0.2
+status: {}
