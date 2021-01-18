@@ -5,6 +5,8 @@
 jx:
   imagePullSecrets:
   - tekton-container-registry-auth
+  ingress:
+    customIngressClass: public
   pipelineVariables: {}
   secrets:
     adminUser:
@@ -20,7 +22,8 @@ jxRequirements:
     enabled: false
     schedule: ""
   cluster:
-    chartRepository: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+    chartKind: pages
+    chartRepository: https://github.com/ascheman/helmcharts.git
     clusterName: kind
     devEnvApprovers:
     - todo
@@ -29,7 +32,7 @@ jxRequirements:
     gitName: github
     gitServer: https://github.com
     provider: minikube
-    registry: docker-registry-jx.k8s0.dukecon.org
+    registry: 10.152.183.96
   environments:
   - key: dev
     owner: ascheman
