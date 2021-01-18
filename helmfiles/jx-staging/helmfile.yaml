@@ -13,5 +13,10 @@ releases:
   name: jx3-demo-golang-http-2021-01-16
   values:
   - jx-values.yaml
+- chart: dev/jx3-demo-spring-boot-2021-01-18
+  version: 0.0.2
+  name: jx3-demo-spring-boot-2021-01-18
+  values:
+  - jx-values.yaml
 templates: {}
 renderedvalues: {}
