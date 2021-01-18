@@ -1,10 +1,9 @@
 name: Kind BDD test
 on:
-  # TODO disable kind BDD for now until it works reliably
-  # pull_request:
-
   # allow manual triggering
   workflow_dispatch: {}
+  # TODO disable kind BDD for now until it works reliably
+  # pull_request:
 jobs:
   kind:
     runs-on: ubuntu-latest
@@ -14,7 +13,7 @@ jobs:
       env:
         GH_ACCESS_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         JENKINS_PASSWORD: ${{ secrets.JENKINS_PASSWORD }}
-      run: |
+      run: |2
 
         if [ -z "$GH_ACCESS_TOKEN" ]
         then
