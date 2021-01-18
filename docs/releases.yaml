@@ -193,3 +193,33 @@
     repositoryUrl: https://cdfoundation.github.io/tekton-helm-chart
     resourcePath: config-root/namespaces/tekton-pipelines/tekton-pipeline
     version: 0.19.1
+- namespace: jx-production
+  path: helmfiles/jx-production/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://jx3-demo-golang-http-2021-01-16-jx-production.k8s0.dukecon.org
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: jx3-demo-golang-http-2021-01-16
+      url: http://jx3-demo-golang-http-2021-01-16-jx-production.k8s0.dukecon.org
+    name: jx3-demo-golang-http-2021-01-16
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-production/jx3-demo-golang-http-2021-01-16
+    version: 0.0.1
+- namespace: jx-staging
+  path: helmfiles/jx-staging/helmfile.yaml
+  releases:
+  - apiVersion: v1
+    applicationUrl: http://jx3-demo-golang-http-2021-01-16-jx-staging.k8s0.dukecon.org
+    description: A Helm chart for Kubernetes
+    icon: https://raw.githubusercontent.com/cdfoundation/artwork/master/jenkinsx/icon/color/jenkinsx-icon-color.png
+    ingresses:
+    - name: jx3-demo-golang-http-2021-01-16
+      url: http://jx3-demo-golang-http-2021-01-16-jx-staging.k8s0.dukecon.org
+    name: jx3-demo-golang-http-2021-01-16
+    repositoryName: dev
+    repositoryUrl: http://bucketrepo.jx.svc.cluster.local/bucketrepo/charts/
+    resourcePath: config-root/namespaces/jx-staging/jx3-demo-golang-http-2021-01-16
+    version: 0.0.1
