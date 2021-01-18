@@ -10,6 +10,10 @@ data:
       repos:
       - ascheman/jx3-demo-golang-http-2021-01-16
       require_self_approval: true
+    - lgtm_acts_as_approve: true
+      repos:
+      - ascheman/jx3-demo-spring-boot-2021-01-18
+      require_self_approval: true
     cat: {}
     cherry_pick_unapproved: {}
     config_updater:
@@ -25,6 +29,22 @@ data:
     owners: {}
     plugins:
       ascheman/jx3-demo-golang-http-2021-01-16:
+      - approve
+      - assign
+      - blunderbuss
+      - help
+      - hold
+      - lgtm
+      - lifecycle
+      - override
+      - size
+      - trigger
+      - wip
+      - heart
+      - cat
+      - dog
+      - pony
+      ascheman/jx3-demo-spring-boot-2021-01-18:
       - approve
       - assign
       - blunderbuss
@@ -71,6 +91,9 @@ data:
       trusted_org: todo
     - repos:
       - ascheman/jx3-demo-golang-http-2021-01-16
+      trusted_org: todo
+    - repos:
+      - ascheman/jx3-demo-spring-boot-2021-01-18
       trusted_org: todo
     welcome:
     - message_template: Welcome

@@ -9,4 +9,5 @@ spec:
     providerKind: github
     repositories:
     - name: jx3-demo-golang-http-2021-01-16
+    - name: jx3-demo-spring-boot-2021-01-18
     scheduler: in-repo
