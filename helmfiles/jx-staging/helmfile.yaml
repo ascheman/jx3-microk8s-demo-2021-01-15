@@ -9,7 +9,7 @@ repositories:
   url: https://ascheman.github.io/helmcharts/
 releases:
 - chart: dev/jx3-demo-golang-http-2021-01-16
-  version: 0.0.6
+  version: 0.0.7
   name: jx3-demo-golang-http-2021-01-16
   values:
   - jx-values.yaml
