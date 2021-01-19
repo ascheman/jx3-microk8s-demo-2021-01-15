@@ -2,9 +2,9 @@
 apiVersion: jenkins.io/v1
 kind: Release
 metadata:
-  creationTimestamp: "2021-01-18T23:12:49Z"
+  creationTimestamp: "2021-01-19T08:14:54Z"
   deletionTimestamp: null
-  name: 'jx3-demo-golang-http-2021-01-16-0.0.6'
+  name: 'jx3-demo-golang-http-2021-01-16-0.0.7'
   namespace: jx-staging
   labels:
     gitops.jenkins-x.io/pipeline: 'namespaces'
@@ -18,8 +18,8 @@ spec:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
       message: |
-        chore: release 0.0.6
-      sha: 9b57fd8be906d0c6a1dff0949b51e754db70164a
+        chore: release 0.0.7
+      sha: 257d5102d14896cc07eee334aaef05f91bed0131
     - author:
         email: jenkins-x@googlegroups.com
         name: jenkins-x-bot
@@ -29,7 +29,7 @@ spec:
         name: jenkins-x-bot
       message: |
         chore: add variables
-      sha: 015af356806e3420ebb8f2af952455ec00e56107
+      sha: 6db3e7ca4121c6349e0b3bc4f5d8ef171d576ede
     - author:
         email: gerd@aschemann.net
         name: Gerd Aschemann
@@ -38,12 +38,22 @@ spec:
         email: gerd@aschemann.net
         name: Gerd Aschemann
       message: |
-        Use jx-promote which publishes chart to GH pages
-      sha: 059383b25f0df64207f8c093952fd91d9f1294e4
+        update charts (https://github.com/jenkins-x/jx3-gitops-template) from master (e9aa5517b855c5e3cdf7b06b03c6fda4b36f04b9) to master (cd501cf5c185c592663d68273b60e3413c0278fb)
+      sha: 40e32d1a11459db7a11f24ae0ebb9a8d25e93cd4
+    - author:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      branch: master
+      committer:
+        email: gerd@aschemann.net
+        name: Gerd Aschemann
+      message: |
+        update jenkins-x (https://github.com/jenkins-x/jx3-pipeline-catalog) from master (a519a567c8c50fdb08e05e5e980c5466d3da8389) to master (8b40f09b9b9d8511c36c266283d7f3043a260322)
+      sha: 9f47210f7a7083b528533e44406d57ec9a0e7dbd
   gitHttpUrl: https://github.com/ascheman/jx3-demo-golang-http-2021-01-16
   gitOwner: ascheman
   gitRepository: jx3-demo-golang-http-2021-01-16
   name: 'jx3-demo-golang-http-2021-01-16'
-  releaseNotesURL: https://github.com/ascheman/jx3-demo-golang-http-2021-01-16/releases/tag/v0.0.6
-  version: v0.0.6
+  releaseNotesURL: https://github.com/ascheman/jx3-demo-golang-http-2021-01-16/releases/tag/v0.0.7
+  version: v0.0.7
 status: {}
